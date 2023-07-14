@@ -1,0 +1,55 @@
+.jar {
+      width: 100vw;
+      height: 100vh;
+      background-image: url('https://picsum.photos/1920/1280/?random');
+      background-position: center;
+      background-size: cover;
+    }
+
+    .jarcontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .optionsContainer {
+      background: linear-gradient(#FEAC5E, #C779D0, #4BC0C8);
+      padding: 7% 0;
+    }
+
+    .text {
+      font-family: 'Lobster', cursive;
+      font-size: 5rem;
+      color: white;
+    }
+
+    .description {
+      margin-top: 3%;
+      font-size: 1.4rem;
+    }
+
+    .icon  {
+      margin-top: 50px;
+      font-size: 70px;
+      cursor: pointer;
+    }
+
+    .icon:active {
+      color: pink;
+      transform: translateY(3px);
+    }
+
+    .mainText {
+      font-size: 5rem;
+    }
+
+    .moreText {
+      font-size: 16px;
+      width: 50vw;
+      margin: 25px auto;
+    }
+
+    .moreTextEnds {
+      margin-bottom: 0;
+    }

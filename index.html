@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>SWISH</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="site.webmanifest">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image" href="assets/icon/favicon-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.theme.default.min.css">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- //Slick Slider CSS -->
+    <!-- File Uploader -->
+    <link rel="stylesheet" href="assets/css/ssi-uploader.css"/>
+    <!-- //File Uploader -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+    <style type="text/css">
+        .preloader-wrapper {
+            background: #ffffff;
+            font-family: Roboto, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999999;
+            width: 100%;
+            height: 100%;
+        }
+        .preloader-wrapper .preloader {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            transform: rotate(45deg);
+            animation: walk 1s linear infinite;
+        }
+        .preloader-wrapper .preloader span {
+            width: 40px;
+            height: 40px;
+            background: #000000;
+            position: absolute;
+            animation: spin 1s linear infinite;
+        }
+        .preloader-wrapper .preloader .light {
+            background: #000;
+        }
+        .preloader-wrapper .preloader span:nth-child(1) {
+            top: 0;
+            left: 0;
+        }
+
+        .preloader-wrapper .preloader span:nth-child(2) {
+            top: 0;
+            right: 0;
+        }
+        .preloader-wrapper .preloader span:nth-child(3) {
+            bottom: 0;
+            left: 0;
+        }
+        .preloader-wrapper .preloader span:nth-child(4) {
+            bottom: 0;
+            right: 0;
+        }
+        @keyframes  walk {
+            50% {
+                width: 130px;
+                height: 130px;
+            }
+        }
+        @keyframes  spin {
+            0% {
+                transform: rotate(0);
+            }
+            50%, 90%, 100% {
+                transform: rotate(90deg);
+            }
+        }
+        .preloader-wrapper #by {
+            font-family: 'Arima Madurai', cursive;
+            color: #000000;
+            font-size: 15px;
+            font-weight: 900;
+            width: auto;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .preloader-wrapper #by img {
+            width: 50px;
+        }
+    </style>
+    <div class="preloader-wrapper">
+        <span id="by"><img src="assets/logo/swish-2.png"></span>
+        <div>
+          <div class="preloader">
+            <span class="light"></span>
+            <span></span>
+            <span></span>
+            <span class="light"></span>
+          </div>
+        </div>
+    </div>
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+    <div id="preloader">
+        <div data-loader="circle-side"></div>
+    </div>
+    <!-- End Preload -->
+
+    <header class="header">
+        <!-- <div class="section-promotion-bar  d-md-block">
+            <div class="promotion-bar" id="promotionBar">
+                <div class="promotion-close toggle-pop"></div>
+                <p><strong><a href="">#ShopFromHome</a>&nbsp;</strong>We are open attend to your queries on product information, prices, promotions, and more, daily from 10am to 7pm.&nbsp;</p>
+            </div>
+        </div> -->
+        <div class="top-header">
+            <div class="header-menu-toggle-btn">
+                <span class="header-menu-toggle-btn-content"></span>
+            </div>
+            <div class="search-button-for-mobile header-main-search">
+                <a href=""><i class="fas fa-search"></i></a>
+            </div>
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="assets/logo/swish-1.png" alt="SWISH">
+                    <img src="assets/logo/swish-2.png" alt="SWISH">
+                </a>
+            </div>
+            <div class="header-nav-items-wrapper">
+                <ul class="header-nav-items-inner">
+                    <li class="header-nav-item categories">
+                        <a class="title" href="category.html">Categories</a>
+                        <div class="header-category-has-menu-wrapper">
+                            <div class="header-category-has-menu-inner">
+                                <div class="container">
+                                    <div class="row justify-content-center category-has-menu-col-item-wrapper">
+                                        <div class="category-has-menu-col-item">
+                                            <div class="top-box">
+                                                <div class="image">
+                                                    <img src="assets/icon/commode-1.png">
+                                                </div>
+                                                <a class="title" href="">Commode</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a href="">One Piece Commode</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Wall Hung Commode</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Smart Commode</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-has-menu-col-item">
+                                            <div class="top-box">
+                                                <div class="image">
+                                                    <img src="assets/icon/basin-1.png">
+                                                </div>
+                                                <a class="title" href="">Basin</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a href="">Pedestal Basin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Wall Hung Basin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Art Basin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Box Basin</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-has-menu-col-item">
+                                            <div class="top-box">
+                                                <div class="image">
+                                                    <img src="assets/icon/faucet-1.png">
+                                                </div>
+                                                <a class="title" href="">Faucet</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a href="">Shower Mixer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Basin Mixer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Long Basin Mixer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Bath Mixer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Piller Cock</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Long Piller Cock</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Bib Cock</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Two in one</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Angle Stop Cock</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-has-menu-col-item">
+                                            <div class="top-box">
+                                                <div class="image accessories">
+                                                    <img src="assets/icon/accossories-1.png">
+                                                </div>
+                                                <a class="title" href="">Accessories</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a href="">Towel Rail</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Towel Rail</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Duble Towel Rail</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Towel Ring</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Soap Case</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Brush Holder</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Liquid Soap</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Paper Holder</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Glass Shelf</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-has-menu-col-item">
+                                            <div class="top-box">
+                                                <div class="image">
+                                                    <img src="assets/icon/shower-1.png">
+                                                </div>
+                                                <a class="title" href="">Shower</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a href="">Shower Panel</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Over Head Shower</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Hand Shower</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Push Shower</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-has-menu-col-item">
+                                            <div class="top-box">
+                                                <div class="image">
+                                                    <img src="assets/icon/kitchen-1.png">
+                                                </div>
+                                                <a class="title" href="">Kitchen</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a href="">Kitchen Hood</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Kitchen Burner</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Kitchen Sink</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-has-menu-col-item">
+                                            <div class="top-box">
+                                                <div class="image find-more">
+                                                    <img src="assets/icon/find-more-1.png">
+                                                </div>
+                                                <a class="title" href="">Find More</a>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <a href="">Waste System</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Mirror</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Geyser</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- For Mobile View -->
+                        <div class="category-list-for-mobile">
+                            <a class="item-title m-title" data-name="commode" href="">Commode</a>
+                            <a class="item-title m-title" data-name="basin" href="">Basin</a>
+                            <a class="item-title m-title" data-name="faucet" href="">Faucet</a>
+                            <a class="item-title m-title" data-name="accessories" href="">Accessories</a>
+                            <a class="item-title" data-name="shower" href="">Shower</a>
+                            <a class="item-title m-title" data-name="kitchen" href="">Kitchen</a>
+                            <a class="item-title m-title" data-name="find-more" href="">Find More</a>
+                        </div>
+                        <div class="header-category-has-menu-for-mobile-wrapper">
+                            <div class="header-category-has-menu-for-mobile">
+                                <div class="category-has-menu-for-mobile-item commode">
+                                    <span class="category-back-button"></span>
+                                    <div class="item-title">
+                                        <a class="main-title" href="">Commode</a>
+                                    </div>
+                                    <div class="item-menu-wrapper">
+                                        <ul class="item-menu-inner">
+                                        <li>
+                                            <a href="">One Piece Commode</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Wall Hung Commode</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Smart Commode</a>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                <div class="category-has-menu-for-mobile-item basin">
+                                    <span class="category-back-button"></span>
+                                    <div class="item-title">
+                                        <a class="main-title" href="">Basin</a>
+                                    </div>
+                                    <div class="item-menu-wrapper">
+                                        <ul class="item-menu-inner">
+                                            <li>
+                                                <a href="">Pedestal Basin</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Wall Hung Basin</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Art Basin</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Box Basin</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category-has-menu-for-mobile-item faucet">
+                                    <span class="category-back-button"></span>
+                                    <div class="item-title">
+                                        <a class="main-title" href="">Faucet</a>
+                                    </div>
+                                    <div class="item-menu-wrapper">
+                                        <ul class="item-menu-inner">
+                                            <li>
+                                                <a href="">Shower Mixer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Basin Mixer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Long Basin Mixer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bath Mixer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Piller Cock</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Long Piller Cock</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bib Cock</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Two in one</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Angle Stop Cock</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category-has-menu-for-mobile-item accessories">
+                                    <span class="category-back-button"></span>
+                                    <div class="item-title">
+                                        <a class="main-title" href="">Accessories</a>
+                                    </div>
+                                    <div class="item-menu-wrapper">
+                                        <ul class="item-menu-inner">
+                                            <li>
+                                                <a href="">Towel Rail</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Towel Rail</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Duble Towel Rail</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Towel Ring</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Soap Case</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Brush Holder</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Liquid Soap</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Paper Holder</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Glass Shelf</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category-has-menu-for-mobile-item shower">
+                                    <span class="category-back-button"></span>
+                                    <div class="item-title">
+                                        <a class="main-title" href="">Shower</a>
+                                    </div>
+                                    <div class="item-menu-wrapper">
+                                        <ul class="item-menu-inner">
+                                            <li>
+                                                <a href="">Shower Panel</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Over Head Shower</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Hand Shower</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Push Shower</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category-has-menu-for-mobile-item kitchen">
+                                    <span class="category-back-button"></span>
+                                    <div class="item-title">
+                                        <a class="main-title" href="">Kitchen</a>
+                                    </div>
+                                    <div class="item-menu-wrapper">
+                                        <ul class="item-menu-inner">
+                                            <li>
+                                                <a href="">Kitchen Hood</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Kitchen Burner</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Kitchen Sink</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category-has-menu-for-mobile-item find-more">
+                                    <span class="category-back-button"></span>
+                                    <div class="item-title">
+                                        <a class="main-title" href="">Find More</a>
+                                    </div>
+                                    <div class="item-menu-wrapper">
+                                        <ul class="item-menu-inner">
+                                            <li>
+                                                <a href="">Waste System</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Mirror</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Geyser</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- For Mobile View -->
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="">About Us</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="store-location.html">Store Location</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="">My Idea</a>
+                    </li>
+                    <li class="header-nav-item header-main-search">
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-main-search-field-wrapper">
+        <span class="search-field-remove-btn"></span>
+        <form class="header-main-search-field-inner" method="" action="">
+            <div class="input-row">
+                <input type="text" name="">
+                <span class="text-remove">✕</span>
+            </div>
+            <button class="search-btn">Search</button>
+        </form>
+    </div>
+
+    <main class="main-body">
+        <section class="category-section-with-info-and-image">
+            <div class="container">
+                <div class="category-section-with-info-and-image-inner">
+                    <div class="category-section-with-info-main-tagline-box">
+                        <h2 class="home-banner-text">The finest in every sense</h2>
+                    </div>
+
+                    <div class="category-section-with-info-main-title">
+                        <h2>Product collections</h2>
+                    </div>
+                    <div class="category-section-col-item-outer change-bg">
+                        <!-- Category Based Bg-Images -->
+                        <div class="home-category-all-bg-inner">
+                            <div class="home-category-bg-item home-bg-active" style="background: url(assets/img/01.jpg) 0% 0% / 100% 100%;" data-attr="assets/img/01.jpg"></div>
+                            <div class="home-category-bg-item" style="background: url(assets/img/02.jpg) 0% 0% / 100% 100%;" data-attr="assets/img/02.jpg"></div>
+                            <div class="home-category-bg-item" style="background: url(assets/img/03.jpg) 0% 0% / 100% 100%;" data-attr="assets/img/03.jpg"></div>
+                            <div class="home-category-bg-item" style="background: url(assets/img/04.jpg) 0% 0% / 100% 100%;" data-attr="assets/img/04.jpg"></div>
+                            <div class="home-category-bg-item" style="background: url(assets/img/05.jpg) 0% 0% / 100% 100%;" data-attr="assets/img/05.jpg"></div>
+                        </div>
+                        <!-- //Category Based Bg-Images -->
+                        <div class="home-category-section-col-item-wrapper">
+                            <div class="home-category-section-col-item">
+                                <a href="product.html" data-attr="assets/img/01.jpg">
+                                    <span class="rectangle-bg"></span>
+                                    <div class="category-section-with-info-content">
+                                        <div class="category-section-with-info-animated">
+                                            <h2>COMMODE</h2>
+                                            <div class="home-category-info">Hundreds of choices filtered down for the best of the best. For the purest of dream and function—and for an intensity of comfort and beauty.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="home-category-section-col-item ">
+                                <a href="product.html" data-attr="assets/img/02.jpg">
+                                    <span class="rectangle-bg"></span>
+                                    <div class="category-section-with-info-content">
+                                        <div class="category-section-with-info-animated">
+                                            <h2>BASIN</h2>
+                                            <div class="home-category-info">Hundreds of choices filtered down for the best of the best. For the purest of dream and function—and for an intensity of comfort and beauty.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="home-category-section-col-item ">
+                                <a href="product.html" data-attr="assets/img/03.jpg">
+                                    <span class="rectangle-bg"></span>
+                                    <div class="category-section-with-info-content">
+                                        <div class="category-section-with-info-animated">
+                                            <h2>FAUCET</h2>
+                                            <div class="home-category-info">Hundreds of choices filtered down for the best of the best. For the purest of dream and function—and for an intensity of comfort and beauty.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="home-category-section-col-item ">
+                                <a href="product.html" data-attr="assets/img/04.jpg">
+                                    <span class="rectangle-bg"></span>
+                                    <div class="category-section-with-info-content">
+                                        <div class="category-section-with-info-animated">
+                                            <h2>ACCESSORIES</h2>
+                                            <div class="home-category-info">Hundreds of choices filtered down for the best of the best. For the purest of dream and function—and for an intensity of comfort and beauty.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="home-category-section-col-item ">
+                                <a href="product.html" data-attr="assets/img/05.jpg">
+                                    <span class="rectangle-bg"></span>
+                                    <div class="category-section-with-info-content">
+                                        <div class="category-section-with-info-animated">
+                                            <h2>KITCHEN</h2>
+                                            <div class="home-category-info">Hundreds of choices filtered down for the best of the best. For the purest of dream and function—and for an intensity of comfort and beauty.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Main Slider For Mobile/Tab View -->
+        <section class="home-our-brand-section main-slider">
+            <div class="home-our-brands-slider-wrapper main-slider">
+                <div class="home-category-tagline-for-mobile">
+                    <h2 class="home-banner-text-for-mobile">The finest in every sense</h2>
+                </div>
+                <div class="home-our-brands-slider-inner main-slider owl-carousel">
+                    <div class="home-our-brands-slider-item">
+                        <a class="item-link" href="">
+                            <div class="home-our-brands-slider-item-image" style="background: url(assets/img/mobile-01.jpg);background-size: cover;background-position: center;">
+                                <!-- <img src="assets/img/01.jpg"> -->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home-our-brands-slider-item">
+                        <a class="item-link" href="">
+                            <div class="home-our-brands-slider-item-image" style="background: url(assets/img/1593351190927.JPEG);background-size: cover;background-position: center;">
+                                <!-- <img src="assets/img/02.jpg"> -->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home-our-brands-slider-item">
+                        <a class="item-link" href="">
+                            <div class="home-our-brands-slider-item-image" style="background: url(assets/img/mobile-03.jpg);background-size: cover;background-position: center;">
+                                <!-- <img src="assets/img/03.jpg"> -->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home-our-brands-slider-item">
+                        <a class="item-link" href="">
+                            <div class="home-our-brands-slider-item-image" style="background: url(assets/img/mobile-04.jpg);background-size: cover;background-position: center;">
+                               <!--  <img src="assets/img/04.jpg"> -->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home-our-brands-slider-item">
+                        <a class="item-link" href="">
+                            <div class="home-our-brands-slider-item-image" style="background: url(assets/img/mobile-05.jpg);background-size: cover;background-position: center;">
+                                <!-- <img src="assets/img/05.jpg"> -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //Main Slider For Mobile/Tab View -->
+
+
+        <!--Category list For Movile View -->
+        <section class="home-category-category-list">
+            <div class="top-box">
+                <h2 class="text">Discover Hot Categories </h2>
+            </div>
+            <div class="container">
+                <div class="home-category-category-list-item-wrapper">
+                    <a href="" class="home-category-category-list-item">
+                        <div class="image">
+                            <img src="assets/icon/commode-1.png">
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Commode</h2>
+                        </div>
+                    </a>
+                    <a href="" class="home-category-category-list-item">
+                        <div class="image">
+                            <img src="assets/icon/basin-1.png">
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Basin</h2>
+                        </div>
+                    </a>
+                    <a href="" class="home-category-category-list-item">
+                        <div class="image">
+                            <img src="assets/icon/faucet-1.png">
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Faucet</h2>
+                        </div>
+                    </a>
+                    <a href="" class="home-category-category-list-item">
+                        <div class="image accessories">
+                            <img src="assets/icon/accossories-1.png">
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Accessories</h2>
+                        </div>
+                    </a>
+                    <a href="" class="home-category-category-list-item">
+                        <div class="image">
+                            <img src="assets/icon/shower-1.png">
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Shower</h2>
+                        </div>
+                    </a>
+                    <a href="" class="home-category-category-list-item">
+                        <div class="image">
+                            <img src="assets/icon/kitchen-1.png">
+                        </div>
+                        <div class="content kitchen">
+                            <h2 class="title">Kitchen</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- //Category list For Movile View -->
+        
+        <!-- Best Selling 6 Product -->
+        <section class="home-product-short-description-section">
+            <div class="container">
+                <div class="row m-0">
+                    <div class="col-lg-12 p-0">
+                        <div class="home-product-short-description-summary">
+                            <p>Take a glimpse of our best selling products throughout the years. Thousands of customers have happy customers proudly showcases our gems in their dream homes, be sure to get one for yourself too.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 home-latest-product-all-image-outer">
+                        <div class="home-latest-product-all-image">
+                            <div class="home-latest-product-image-item">
+                                <div class="scrollme BGforScrollMe">
+                                    <div class="animateme text" data-when="enter" data-from="0.9" data-to="0" data-opacity="0" data-translatex="-100">
+                                    <a class="product-link" href="">
+                                        <div class="image-item" style="background: url(assets/img/best-selling-1.jpg);background-position: center;background-size: 100%;background-repeat: no-repeat;border: 1px solid #000000;">
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-latest-product-image-item">
+                                <div class="scrollme BGforScrollMe">
+                                    <div class="animateme text" data-when="enter" data-from="0.9" data-to="0" data-opacity="0" data-translatex="-100">
+                                    <a class="product-link" href="">
+                                        <div class="image-item" style="background: url(assets/img/best-selling-2.jpg);background-position: center;background-size: 100%;background-repeat: no-repeat;border: 1px solid #000000;">
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-latest-product-image-item">
+                                <div class="scrollme BGforScrollMe">
+                                    <div class="animateme text" data-when="enter" data-from="0.9" data-to="0" data-opacity="0" data-translatex="-500">
+                                    <a class="product-link" href="">
+                                        <div class="image-item" style="background: url(assets/img/best-selling-3.jpg);background-position: center;background-size: 100%;background-repeat: no-repeat;border: 1px solid #000000;">
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="home-latest-product-image-item">
+                                <div class="scrollme BGforScrollMe">
+                                    <div class="animateme text" data-when="enter" data-from="0.9" data-to="0" data-opacity="0" data-translatex="500">
+                                    <a class="product-link" href="">
+                                        <div class="image-item" style="background: url(assets/img/best-selling-4.jpg);background-position: center;background-size: 100%;background-repeat: no-repeat;border: 1px solid #000000;">
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-latest-product-image-item">
+                                <div class="scrollme BGforScrollMe">
+                                    <div class="animateme text" data-when="enter" data-from="0.9" data-to="0" data-opacity="0" data-translatex="500">
+                                    <a class="product-link" href="">
+                                        <div class="image-item" style="background: url(assets/img/best-selling-5.jpg);background-position: center;background-size: 100%;background-repeat: no-repeat;border: 1px solid #000000;">
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-latest-product-image-item">
+                                <div class="scrollme BGforScrollMe">
+                                    <div class="animateme text" data-when="enter" data-from="0.9" data-to="0" data-opacity="0" data-translatex="500">
+                                    <a class="product-link" href="">
+                                        <div class="image-item" style="background: url(assets/img/best-selling-6.jpg);background-position: center;background-size: 100%;background-repeat: no-repeat;border: 1px solid #000000;">
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-about-swish-short-description">
+                        <p>
+                            Experience the true definition of luxury with SWISH- Luxury Bathware. We make sure you get the best quality products that emits vibes of premiumness and the built quality is sure to last with you throughout the decade. SWISH. where a luxurious lifestyle awaits just for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //Best Selling 6 Product -->
+        
+        <!-- New Arrival Products-->
+        <section class="home-our-brand-section new-arrival">
+            <div class="container">
+                <div class="home-our-brands-top-box">
+                    <div class="home-our-brands-top-main-title">
+                        <h2>New Arrival</h2>
+                    </div>
+                </div>
+            
+                <div class="home-our-brands-slider-wrapper">
+                    <div class="home-our-brands-slider-inner new-product owl-carousel">
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-14.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-15.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-14.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-15.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-14.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-15.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-14.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //New Arrival Products-->
+        
+        <!-- New Arrival Products-->
+        <section class="home-our-brand-section popular-product">
+            <div class="container">
+                <div class="home-our-brands-top-box">
+                    <div class="home-our-brands-top-main-title">
+                        <h2>Popular Products</h2>
+                    </div>
+                </div>
+                <div class="home-our-brands-slider-wrapper">
+                    <div class="home-our-brands-slider-inner popular-product owl-carousel">
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-14.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-15.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-14.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-15.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-14.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-15.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-brands-slider-item">
+                            <a class="product-all-product-list-item" href="">
+                                <div class="image">
+                                    <img src="assets/img/img-14.png">
+                                </div>
+                                <div class="content">
+                                    <div class="item-info">
+                                        <h2 class="title">SWISH Starck</h2>
+                                        <h3 class="info">HighArc Kitchen Faucet 2-Spray Pull-Down, 1.75 GPM</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //New Arrival Products-->
+
+        <section class="home-our-youtube-videos pt-0">
+            <div class="container">
+                <div class="home-our-youtube-videos-top">
+                    <h2 class="title">WATCH OUR LATEST VIDEOS ON YOUTUBE</h2>
+                    <h4 class="detail">Check out our youtube channel for our latest videos. Be sure like, share, and most importantly Subscribe for our latest videos.</h4>
+                    <div class="home-our-youtube-all-videos-btn-box">
+                        <a title="Youtube Channel" href="">Follow Us On Youtube</a>
+                    </div>
+                </div>
+            
+                <div class="home-our-youtube-videos-slider-wrapper">
+                    <div class="home-our-youtube-videos-inner owl-carousel">
+                        <div class="home-our-youtube-videos-slider-item">
+                            <div class="home-our-youtube-videos-slider-item-video">
+                                <video controls="">
+                                    <source src="assets/video/sample.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <a href="">
+                                <div class="home-our-youtube-videos-slider-item-content">
+                                    <h2 class="title">Paris</h2>
+                                    <p class="details">Binova Offers kitchen collection and finishes of high design and research to satisfy the most demanding customers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-youtube-videos-slider-item">
+                            <div class="home-our-youtube-videos-slider-item-video">
+                                <video controls="">
+                                    <source src="assets/video/sample.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <a href="">
+                                <div class="home-our-youtube-videos-slider-item-content">
+                                    <h2 class="title">Paris</h2>
+                                    <p class="details">Binova Offers kitchen collection and finishes of high design and research to satisfy the most demanding customers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-youtube-videos-slider-item">
+                            <div class="home-our-youtube-videos-slider-item-video">
+                                <video controls="">
+                                    <source src="assets/video/sample.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <a href="">
+                                <div class="home-our-youtube-videos-slider-item-content">
+                                    <h2 class="title">Paris</h2>
+                                    <p class="details">Binova Offers kitchen collection and finishes of high design and research to satisfy the most demanding customers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-youtube-videos-slider-item">
+                            <div class="home-our-youtube-videos-slider-item-video">
+                                <video controls="">
+                                    <source src="assets/video/sample.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <a href="">
+                                <div class="home-our-youtube-videos-slider-item-content">
+                                    <h2 class="title">Paris</h2>
+                                    <p class="details">Binova Offers kitchen collection and finishes of high design and research to satisfy the most demanding customers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-youtube-videos-slider-item">
+                            <div class="home-our-youtube-videos-slider-item-video">
+                                <video controls="">
+                                    <source src="assets/video/sample.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <a href="">
+                                <div class="home-our-youtube-videos-slider-item-content">
+                                    <h2 class="title">Paris</h2>
+                                    <p class="details">Binova Offers kitchen collection and finishes of high design and research to satisfy the most demanding customers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home-our-youtube-videos-slider-item">
+                            <div class="home-our-youtube-videos-slider-item-video">
+                                <video controls="">
+                                    <source src="assets/video/sample.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <a href="">
+                                <div class="home-our-youtube-videos-slider-item-content">
+                                    <h2 class="title">Paris</h2>
+                                    <p class="details">Binova Offers kitchen collection and finishes of high design and research to satisfy the most demanding customers.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-subscribe-section">
+                <div class="row">
+                    <div class="col-lg-6 footer-subscribe-box-title">
+                        <h2>Subscribe to get <br>
+                        our latest updates</h2>
+                    </div>
+                    <div class="col-lg-6 footer-subscribe-box-form">
+                        <form method="" action="">
+                            <input type="text" name="" placeholder="Your Email Address">
+                            <button>Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link-section">
+                <div class="row">
+                    <div class="col-lg-3 mb-lg-0 mb-4 footer-comapny-section">
+                        <div class="footer-company-logo">
+                            <a href="">
+                                <img src="assets/logo/swish-3.png" alt="SWISH">
+                            </a>
+                        </div>
+                        <div class="footer-company-social">
+                            <ul>
+                               <li class="facebook">
+                                   <a href=""><i class="fab fa-facebook-f"></i></a>
+                               </li> 
+                               <li class="instagram">
+                                   <a href=""><i class="fab fa-instagram"></i></a>
+                               </li>
+                               <li class="youtube">
+                                   <a href=""><i class="fab fa-youtube"></i></a>
+                               </li>  
+                               <li class="linkedin">
+                                   <a href=""><i class="fab fa-linkedin-in"></i></a>
+                               </li>  
+                               <li class="twitter">
+                                   <a href=""><i class="fab fa-twitter"></i></a>
+                               </li>  
+                               <li class="printerest">
+                                   <a href=""><i class="fab fa-pinterest-p"></i></a>
+                               </li> 
+                               <li class="whatsapp">
+                                   <a href=""><i class="fab fa-whatsapp"></i></a>
+                               </li> 
+                               <li class="google">
+                                   <a href=""><i class="fab fa-google"></i></a>
+                               </li> 
+                            </ul>
+                            <h2 class="follow-title">Follow Us On Social Channel</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-col-menu">
+                            <h2 class="footer-col-menu-title">Navigation</h2>
+                            <div class="footer-col-menu-item-wrapper">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="portpolio.html">Portpolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="news-and-events.html">News & Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.html">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="warranty-policy.html">Warranty Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="terms-and-condition.html">Terms And Condition</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-col-menu">
+                            <h2 class="footer-col-menu-title">Contact Us</h2>
+                            <div class="footer-col-menu-item-wrapper">
+                                <p><strong>T</strong>: +880 1123456789</p>
+                                <p><strong>F</strong>: +880 1123456789</p>
+                                <p><strong>E</strong>: example@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="footer-col-menu">
+                            <a class="download" href="download.html">Download</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-col-menu">
+                            <h2 class="footer-col-menu-title">Corporate Address</h2>
+                            <div class="footer-col-menu-item-wrapper">
+                                <p>Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522 (257) 563-7401</p>
+                            </div>
+                        </div>
+                        <div class="footer-col-menu mt-5">
+                            <h2 class="footer-col-menu-title">Store Locations</h2>
+                            <div class="footer-col-menu-item-wrapper">
+                                <p>Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522 (257) 563-7401</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2020 SWISH - Luxury Bathware </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <!-- Image Zoom On Mouse Hover -->
+    <script type="text/javascript" src="assets/zoom/lib/blowup.js"></script>
+    <script type="text/javascript" src="assets/zoom/scripts/index.js"></script>
+    <script type="text/javascript" src="assets/zoom/scripts/prism.js"></script>
+    <!-- //Image Zoom On Mouse Hover -->
+    <script src="assets/owl-carousel/owl.carousel.min.js"></script> 
+    <!-- File Upload -->
+    <script src="assets/js/ssi-uploader.js"></script>
+    <!-- //File Upload -->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">    
+        // //Preloader
+        // $(window).on('load', function() {
+        //     setTimeout(function() {
+        //         $('#preloader').remove();
+        //     }, 4000);
+        // });
+    </script>
+</body>
+</html>
